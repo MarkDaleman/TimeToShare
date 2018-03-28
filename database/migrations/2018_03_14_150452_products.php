@@ -15,9 +15,9 @@ class Products extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->increments('id'); // Product ID
-            $table->integer('owner_id')->unsigned(); // Wie is de eigenaar van het product
+            $table->char('owner_id'); // Wie is de eigenaar van het product
             $table->string('product_name'); // Neem van het product
-            $table->integer('share_holder_id')->unsigned(); // Wie heeft het product nu ?
+            $table->char('share_holder_id'); // Wie heeft het product nu ?
             $table->tinyInteger('share_status');
             $table->boolean('product_returned'); // is het product teruggegeven?
             $table->timestamps();

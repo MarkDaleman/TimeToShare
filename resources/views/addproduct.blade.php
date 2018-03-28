@@ -15,7 +15,7 @@
                         @endif
 
 
-                        <p>So you want to add a product eh?!</p>
+                        <p>Door het formulier hieronder in te vullen kan je een product toevoegen en met iemand anders delen.</p>
 
                             <form action="{{ url('/addproduct/post') }}" method="post">
                                 <div class="form-group">

@@ -126,6 +126,7 @@
                 <br />
 
 
+
                 <div class="card">
                     <div class="card-header">Producten geleend op dit moment</div>
                     <div class="card-body">
@@ -148,8 +149,8 @@
 
 
                                         <script>
-                                            moment.locale('nl')
-                                            document.write(moment("{{$verzoek->updated_at->format('Ymd H:m:s')}}", "YYYYMMDD h:mm:ss").fromNow());
+                                            moment.locale('nl');
+                                            document.write(moment("{{$verzoek->updated_at->format('Ymd H:m:s')}}", "YYYYMMDD h:mm:ss").fromNow()).zone("+01:00");
                                         </script>
                                     </td>
                                 </tr>
